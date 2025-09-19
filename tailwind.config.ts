@@ -61,6 +61,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Colores específicos para cocina
+				kitchen: {
+					orange: 'hsl(25, 95%, 53%)',
+					'orange-light': 'hsl(25, 95%, 95%)',
+					'orange-dark': 'hsl(25, 95%, 35%)',
+					red: 'hsl(0, 84%, 60%)',
+					'red-light': 'hsl(0, 84%, 95%)',
+					brown: 'hsl(30, 67%, 25%)',
+					'brown-light': 'hsl(30, 67%, 95%)',
+					cream: 'hsl(45, 100%, 97%)',
+					wood: 'hsl(30, 50%, 60%)'
 				}
 			},
 			borderRadius: {
@@ -84,11 +96,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'slide-in': {
+					'0%': { opacity: '0', transform: 'translateX(-20px)' },
+					'100%': { opacity: '1', transform: 'translateX(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-in': 'slide-in 0.5s ease-out'
 			}
 		}
 	},
